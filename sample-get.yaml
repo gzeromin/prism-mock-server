@@ -1,0 +1,46 @@
+get:
+  summary: sample
+  description: sample
+  parameters:
+    - in: query
+      name: category
+      description: description
+      required: true
+      schema:
+        type: string
+        description: category
+        example: "1"
+                     
+  responses:
+    "200":
+      description: response
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/response"
+components:
+  schemas:
+    response:
+      description: description
+      type: object
+      properties:
+        result:
+          type: string
+          exampe: "true"
+        list:
+          type: array
+          description: list
+          items:
+            properties:
+              object1:
+                type: integer
+                description: --
+                exampe: 1
+        object:
+          type: object
+          description: object
+          properties:
+            element:
+              type: string
+              description: --
+              example: "aaa"

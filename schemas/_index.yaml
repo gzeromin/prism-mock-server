@@ -1,0 +1,6 @@
+Category:
+  $ref: "./Category.yaml"
+Pet:
+  $ref: "./Pet.yaml"
+Tag:
+  $ref: "./Tag.yaml"
